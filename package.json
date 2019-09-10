@@ -1,0 +1,85 @@
+{
+  "name": "@lemoncode/form-validator-builder",
+  "version": "1.0.0",
+  "description": "Helper library to create validators supported by form-validation library.",
+  "main": "./dist/app.js",
+  "preferGlobal": true,
+  "bin": {
+    "form-validator-builder": "./dist/app.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node ./src",
+    "build": "npm run clean && cross-env BABEL_ENV=es babel ./src --out-dir ./dist --ignore 'src/**/*.test.ts,src/**/*.test.js,src/**/files/**/*.ts,src/**/files/**/*.js' --extensions '.ts,.js' && npm run copy-files && npm run clean:dist",
+    "copy-files": "babel ./src/copy-files/files --out-dir ./dist/copy-files/files --copy-files --extensions ''",
+    "clean:dist": "rimraf ./dist/index.js",
+    "clean": "rimraf dist .rpt2_cache package-lock.json",
+    "validate": "npm run lint && npm run build",
+    "lint": "eslint src --ext .ts ",
+    "lint:fix": "npm run lint -- --fix",
+    "deploy": "npm run validate && np",
+    "deploy:beta": "npm run validate && np --tag=beta --any-branch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemoncode/form-validator-builder.git"
+  },
+  "keywords": [
+    "form validator builder",
+    "validator builder",
+    "form validation",
+    "form-validation"
+  ],
+  "author": "Lemoncode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lemoncode/form-validator-builder/issues"
+  },
+  "homepage": "https://github.com/Lemoncode/form-validator-builder#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.0",
+    "klaw": "^3.0.0",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "@types/fs-extra": "^8.0.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/jest": "^24.0.18",
+    "@types/klaw": "^3.0.0",
+    "@types/node": "^12.7.4",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3",
+    "np": "^5.0.3",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint:fix",
+      "pretty-quick — staged",
+      "git add"
+    ]
+  }
+}
