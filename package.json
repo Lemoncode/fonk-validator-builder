@@ -5,7 +5,7 @@
   "main": "./dist/app.js",
   "preferGlobal": true,
   "bin": {
-    "fonk-validator-builder": "./dist/app.js"
+    "fonk-validator": "./dist/app.js"
   },
   "files": [
     "dist"
