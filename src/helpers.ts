@@ -38,11 +38,13 @@ const replaceValueOnFile = async (
   }
 };
 
+const isNodeModules = (path: string) => path.includes('node_modules');
+
 export const replaceValueOnFiles = async (path: string, config: Config) => {
   try {
     const stream = await klaw(path);
     stream.on('data', async file => {
-      if (file.stats.isFile()) {
+      if (file.stats.isFile() && !isNodeModules(file.path)) {
         await replaceValueOnFile(
           file,
           VALIDATOR_NAME_KEY,
