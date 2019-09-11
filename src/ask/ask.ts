@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import { questions } from './questions';
 import { VALIDATOR_SUFFIX, VALIDATOR_PREFIX } from '../constants';
-import { Config } from '../config';
+import { Config } from '../model';
 import { toCamelCase } from '../helpers';
 
 export const ask = async (): Promise<Config> => {
