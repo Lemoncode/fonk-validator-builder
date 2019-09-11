@@ -1,8 +1,8 @@
-# is-true-validator
+# %VALIDATOR_NAME%
 
-[![CircleCI](https://badgen.net/github/status/Lemoncode/is-true-validator/master/ci?icon=circleci&label=circleci)](https://circleci.com/gh/Lemoncode/is-true-validator/tree/master)
-[![NPM Version](https://badgen.net/npm/v/@lemoncode/is-true-validator?icon=npm&label=npm)](https://www.npmjs.com/package/@lemoncode/is-true-validator)
-[![bundle-size](https://badgen.net/bundlephobia/min/@lemoncode/is-true-validator)](https://bundlephobia.com/result?p=@lemoncode/is-true-validator)
+[![CircleCI](https://badgen.net/github/status/Lemoncode/%VALIDATOR_NAME%/master/ci?icon=circleci&label=circleci)](https://circleci.com/gh/Lemoncode/%VALIDATOR_NAME%/tree/master)
+[![NPM Version](https://badgen.net/npm/v/@lemoncode/%VALIDATOR_NAME%?icon=npm&label=npm)](https://www.npmjs.com/package/@lemoncode/%VALIDATOR_NAME%)
+[![bundle-size](https://badgen.net/bundlephobia/min/@lemoncode/%VALIDATOR_NAME%)](https://bundlephobia.com/result?p=@lemoncode/%VALIDATOR_NAME%)
 
 // TODO: Update description
 Micro library validator to check if ... for [form-validation](https://github.com/Lemoncode/form-validation) library.

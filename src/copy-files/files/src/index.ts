@@ -1,3 +1,3 @@
-import * as isTrue from './validator';
+import * as %VALIDATOR_CAMEL_CASE_NAME% from './validator';
 
-export { isTrue };
+export { %VALIDATOR_CAMEL_CASE_NAME% };

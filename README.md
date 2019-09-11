@@ -1,10 +1,10 @@
-# form-validator-builder
+# fonk-validator-builder
 
-Helper library to create `validators` supported by [form-validation](https://github.com/Lemoncode/form-validation) library.
+Helper library to create `validators` supported by [fonk](https://github.com/Lemoncode/fonk) library.
 
 # How to use it
 
-- Create validator repository in https://github.com/Lemoncode. A good repository name will be **_validator-name_-validator**. For example, `is-number-validator`.
+- Create validator repository in https://github.com/Lemoncode. A good repository name will be **fonk-_validator-name_-validator**. For example, `fonk-is-number-validator`.
 
 - Add repository to [circleci](https://circleci.com/add-projects/gh/Lemoncode):
 
@@ -13,13 +13,13 @@ Helper library to create `validators` supported by [form-validation](https://git
 - Install library:
 
 ```bash
-npm install @lemoncode/form-validator-builder -g
+npm install @lemoncode/fonk-validator-builder -g
 ```
 
 - Execute command in `empty` folder project. It will create validator folders and files:
 
 ```bash
-form-validator-builder
+fonk-validator
 ```
 
 > NOTE: It will prompt a question requiring the `validator name`

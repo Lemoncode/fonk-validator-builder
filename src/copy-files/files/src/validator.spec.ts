@@ -1,7 +1,7 @@
 import { validator, setErrorMessage } from './validator';
 
 // TODO: Add specs
-describe('is-true-validator specs', () => {
+describe('%VALIDATOR_NAME% specs', () => {
   it('should return succeeded validation when it feeds value equals undefined', () => {
     // Arrange
     const value = void 0;

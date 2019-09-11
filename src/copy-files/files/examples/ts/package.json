@@ -1,14 +1,14 @@
 {
-  "name": "is-true-validator-ts-example",
+  "name": "%VALIDATOR_NAME%-ts-example",
   "version": "1.0.0",
-  "description": "is-true-validator, typescript example",
+  "description": "%VALIDATOR_NAME%, typescript example",
   "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html --open"
   },
   "dependencies": {
     "@lemoncode/form-validation": "latest",
-    "@lemoncode/is-true-validator": "latest"
+    "@lemoncode/%VALIDATOR_NAME%": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",

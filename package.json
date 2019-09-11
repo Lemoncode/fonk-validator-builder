@@ -1,11 +1,11 @@
 {
-  "name": "@lemoncode/form-validator-builder",
+  "name": "@lemoncode/fonk-validator-builder",
   "version": "1.0.0",
-  "description": "Helper library to create validators supported by form-validation library.",
+  "description": "Helper library to create validators supported by fonk library.",
   "main": "./dist/app.js",
   "preferGlobal": true,
   "bin": {
-    "form-validator-builder": "./dist/app.js"
+    "fonk-validator-builder": "./dist/app.js"
   },
   "files": [
     "dist"
@@ -24,10 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lemoncode/form-validator-builder.git"
+    "url": "git+https://github.com/Lemoncode/fonk-validator-builder.git"
   },
   "keywords": [
-    "form validator builder",
+    "fonk validator builder",
+    "fonk",
     "validator builder",
     "form validation",
     "form-validation"
@@ -35,9 +36,9 @@
   "author": "Lemoncode",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lemoncode/form-validator-builder/issues"
+    "url": "https://github.com/Lemoncode/fonk-validator-builder/issues"
   },
-  "homepage": "https://github.com/Lemoncode/form-validator-builder#readme",
+  "homepage": "https://github.com/Lemoncode/fonk-validator-builder#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "fs-extra": "^8.1.0",

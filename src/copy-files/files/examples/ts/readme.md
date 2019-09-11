@@ -1,8 +1,8 @@
-# is-true-validator example
+# %VALIDATOR_NAME% example
 
-Example using `is-true-validator`.
+Example using `%VALIDATOR_NAME%`.
 
-[![See is-true-validator example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/lemoncode/is-true-validator/tree/master/examples/ts)
+[![See %VALIDATOR_NAME% example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/lemoncode/%VALIDATOR_NAME%/tree/master/examples/ts)
 
 # About Basefactor + Lemoncode
 

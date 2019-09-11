@@ -1,9 +1,9 @@
 {
-  "name": "@lemoncode/is-true-validator",
+  "name": "@lemoncode/%VALIDATOR_NAME%",
   "version": "0.1.0",
   "description": "// TODO: Update description: Micro library validator to check if ... for form-validation",
-  "main": "dist/@lemoncode/is-true-validator.cjs.js",
-  "module": "dist/@lemoncode/is-true-validator.esm.js",
+  "main": "dist/@lemoncode/%VALIDATOR_NAME%.cjs.js",
+  "module": "dist/@lemoncode/%VALIDATOR_NAME%.esm.js",
   "typings": "typings/index.d.ts",
   "files": [
     "dist",
@@ -29,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lemoncode/is-true-validator.git"
+    "url": "git+https://github.com/Lemoncode/%VALIDATOR_NAME%.git"
   },
   "keywords": [
     "is number",
@@ -42,9 +42,9 @@
   "author": "Lemoncode",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lemoncode/is-true-validator/issues"
+    "url": "https://github.com/Lemoncode/%VALIDATOR_NAME%/issues"
   },
-  "homepage": "https://github.com/Lemoncode/is-true-validator#readme",
+  "homepage": "https://github.com/Lemoncode/%VALIDATOR_NAME%#readme",
   "peerDependencies": {
     "@lemoncode/form-validation": "latest"
   },

@@ -1,9 +1,9 @@
 import { createFormValidation } from '@lemoncode/form-validation';
-import { isTrue } from '@lemoncode/is-true-validator';
+import { %VALIDATOR_CAMEL_CASE_NAME% } from '@lemoncode/%VALIDATOR_NAME%';
 
 const validationSchema = {
   field: {
-    myField: [isTrue.validator],
+    myField: [%VALIDATOR_CAMEL_CASE_NAME%.validator],
   },
 };
 

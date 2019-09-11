@@ -1,3 +1,3 @@
-export const VALIDATOR_NAME_KEY = 'is-true-validator';
-export const VALIDATOR_CAMELCASE_NAME_KEY = 'isTrue';
+export const VALIDATOR_NAME_KEY = '%VALIDATOR_NAME%';
+export const VALIDATOR_CAMELCASE_NAME_KEY = '%VALIDATOR_CAMEL_CASE_NAME%';
 export const VALIDATOR_SUFFIX = '-validator';
