@@ -1,4 +1,4 @@
-import { copySync, readFile, writeFile } from 'fs-extra';
+import { copySync } from 'fs-extra';
 
 export const getProcessBasePath = () => process.cwd();
 
