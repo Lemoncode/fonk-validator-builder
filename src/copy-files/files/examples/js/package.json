@@ -1,0 +1,17 @@
+{
+  "name": "%VALIDATOR_NAME%-js-example",
+  "version": "1.0.0",
+  "description": "%VALIDATOR_NAME%, javascript example",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "dependencies": {
+    "@lemoncode/fonk": "latest",
+    "@lemoncode/%VALIDATOR_NAME%": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "parcel-bundler": "^1.6.1"
+  }
+}
