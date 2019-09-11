@@ -1,4 +1,4 @@
-import { FieldValidationFunctionSync } from '@lemoncode/form-validation';
+import { FieldValidationFunctionSync } from '@lemoncode/fonk';
 
 // TODO: Add validator type
 const VALIDATOR_TYPE = '';

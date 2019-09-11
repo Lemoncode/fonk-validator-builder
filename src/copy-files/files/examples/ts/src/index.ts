@@ -1,7 +1,7 @@
 import {
   ValidationSchema,
   createFormValidation,
-} from '@lemoncode/form-validation';
+} from '@lemoncode/fonk';
 import { %VALIDATOR_CAMEL_CASE_NAME% } from '@lemoncode/%VALIDATOR_NAME%';
 
 const validationSchema: ValidationSchema = {
@@ -12,6 +12,7 @@ const validationSchema: ValidationSchema = {
 
 const formValidation = createFormValidation(validationSchema);
 
+// TODO: Update example values 'test' and/or 10 if needed
 Promise.all([
   formValidation.validateField('myField', 'test'),
   formValidation.validateField('myField', 10),

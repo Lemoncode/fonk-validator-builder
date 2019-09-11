@@ -1,7 +1,7 @@
 {
   "name": "@lemoncode/%VALIDATOR_NAME%",
   "version": "0.1.0",
-  "description": "// TODO: Update description: Micro library validator to check if ... for form-validation",
+  "description": "// TODO: Update description: This is a [fonk](https://github.com/Lemoncode/fonk) microlibrary that brings validation capabilities to validate if a field of a form ...",
   "main": "dist/@lemoncode/%VALIDATOR_NAME%.cjs.js",
   "module": "dist/@lemoncode/%VALIDATOR_NAME%.esm.js",
   "typings": "typings/index.d.ts",
@@ -32,10 +32,10 @@
     "url": "git+https://github.com/Lemoncode/%VALIDATOR_NAME%.git"
   },
   "keywords": [
-    "is number",
+    "%VALIDATOR_CAMEL_CASE_NAME%",
     "validator",
+    "fonk",
     "form validation",
-    "form-validation",
     "validate",
     "sync validation"
   ],
@@ -46,13 +46,13 @@
   },
   "homepage": "https://github.com/Lemoncode/%VALIDATOR_NAME%#readme",
   "peerDependencies": {
-    "@lemoncode/form-validation": "latest"
+    "@lemoncode/fonk": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "@lemoncode/form-validation": "latest",
+    "@lemoncode/fonk": "latest",
     "@types/jest": "^24.0.18",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
