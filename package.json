@@ -7,10 +7,31 @@
   "bin": {
     "fonk-validator": "./dist/app.js"
   },
+  "files": [
+    "dist",
+    "dist/copy-files/files/.circleci",
+    "dist/copy-files/files/.vscode",
+    "dist/copy-files/files/config",
+    "dist/copy-files/files/examples",
+    "dist/copy-files/files/src",
+    "dist/copy-files/files/typings",
+    "dist/copy-files/files/.babelrc",
+    "dist/copy-files/files/.editorconfig",
+    "dist/copy-files/files/.eslintignore",
+    "dist/copy-files/files/.eslintrc.js",
+    "dist/copy-files/files/.gitignore",
+    "dist/copy-files/files/.prettierrc",
+    "dist/copy-files/files/LICENSE",
+    "dist/copy-files/files/package.json",
+    "dist/copy-files/files/README.md",
+    "dist/copy-files/files/rollup.config.js",
+    "dist/copy-files/files/tsconfig.json"
+  ],
   "scripts": {
     "start": "node ./src",
-    "build": "npm run clean && cross-env BABEL_ENV=es babel ./src --out-dir ./dist --ignore 'src/**/*.test.ts,src/**/*.test.js,src/**/files/**/*.ts,src/**/files/**/*.js' --extensions '.ts,.js' && npm run copy-files && npm run clean:dist",
+    "build": "npm run clean && cross-env BABEL_ENV=es babel ./src --out-dir ./dist --ignore 'src/**/*.test.ts,src/**/*.test.js,src/**/files/**/*.ts,src/**/files/**/*.js' --extensions '.ts,.js' && npm run copy-files && npm run copy-dot-files && npm run clean:dist",
     "copy-files": "babel ./src/copy-files/files --out-dir ./dist/copy-files/files --copy-files --extensions ''",
+    "copy-dot-files": "babel ./src/copy-files/files/.* --out-dir ./dist/copy-files/files --copy-files --extensions ''",
     "clean:dist": "rimraf ./dist/index.js",
     "clean": "rimraf dist .rpt2_cache package-lock.json",
     "validate": "npm run lint && npm run build",
