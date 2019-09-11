@@ -1,15 +1,12 @@
 {
   "name": "@lemoncode/fonk-validator-builder",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Helper library to create validators supported by fonk library.",
   "main": "./dist/app.js",
   "preferGlobal": true,
   "bin": {
     "fonk-validator": "./dist/app.js"
   },
-  "files": [
-    "dist/**/*"
-  ],
   "scripts": {
     "start": "node ./src",
     "build": "npm run clean && cross-env BABEL_ENV=es babel ./src --out-dir ./dist --ignore 'src/**/*.test.ts,src/**/*.test.js,src/**/files/**/*.ts,src/**/files/**/*.js' --extensions '.ts,.js' && npm run copy-files && npm run clean:dist",
