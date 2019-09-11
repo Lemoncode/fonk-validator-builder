@@ -8,24 +8,7 @@
     "fonk-validator": "./dist/app.js"
   },
   "files": [
-    "dist",
-    "dist/copy-files/files/.circleci",
-    "dist/copy-files/files/.vscode",
-    "dist/copy-files/files/config",
-    "dist/copy-files/files/examples",
-    "dist/copy-files/files/src",
-    "dist/copy-files/files/typings",
-    "dist/copy-files/files/.babelrc",
-    "dist/copy-files/files/.editorconfig",
-    "dist/copy-files/files/.eslintignore",
-    "dist/copy-files/files/.eslintrc.js",
-    "dist/copy-files/files/.gitignore",
-    "dist/copy-files/files/.prettierrc",
-    "dist/copy-files/files/LICENSE",
-    "dist/copy-files/files/package.json",
-    "dist/copy-files/files/README.md",
-    "dist/copy-files/files/rollup.config.js",
-    "dist/copy-files/files/tsconfig.json"
+    "dist"
   ],
   "scripts": {
     "start": "node ./src",
