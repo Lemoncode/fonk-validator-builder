@@ -1,6 +1,6 @@
 {
   "name": "@lemoncode/fonk-validator-builder",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Helper library to create validators supported by fonk library.",
   "main": "./dist/app.js",
   "preferGlobal": true,
