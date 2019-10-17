@@ -16,7 +16,7 @@ We have the following form model:
 
 ```
 const myFormValues = {
-  product : 'shoes',
+  product: 'shoes',
   price: 20,
 }
 ```
@@ -27,7 +27,9 @@ We can add a %VALIDATOR_CAMEL_CASE_NAME% validation to the myFormValues
 import { %VALIDATOR_CAMEL_CASE_NAME% } from '@lemoncode/%VALIDATOR_NAME%';
 
 const validationSchema = {
-  price: [%VALIDATOR_CAMEL_CASE_NAME%.validator],
+  field: {
+    price: [%VALIDATOR_CAMEL_CASE_NAME%.validator],
+  },
 };
 ```
 
@@ -47,12 +49,14 @@ import { %VALIDATOR_CAMEL_CASE_NAME% } from '@lemoncode/%VALIDATOR_NAME%';
 import { %VALIDATOR_CAMEL_CASE_NAME% } from '@lemoncode/%VALIDATOR_NAME%';
 
 const validationSchema = {
-  price: [
-    {
-      validator: %VALIDATOR_CAMEL_CASE_NAME%.validator,
-      message: 'Error message only updated for the validation schema',
-    },
-  ],
+  field: {
+    price: [
+      {
+        validator: %VALIDATOR_CAMEL_CASE_NAME%.validator,
+        message: 'Error message only updated for the validation schema',
+      },
+    ],
+  },
 };
 ```
 
