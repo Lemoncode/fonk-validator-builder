@@ -15,7 +15,7 @@
     "build": "npm run clean && cross-env BABEL_ENV=es babel ./src --out-dir ./dist --ignore 'src/**/*.test.ts,src/**/*.test.js,src/**/files/**/*.ts,src/**/files/**/*.js' --extensions '.ts,.js' && npm run copy-files && npm run copy-dot-files && npm run clean:dist",
     "copy-files": "babel ./src/copy-files/files --out-dir ./dist/copy-files/files --copy-files --extensions ''",
     "copy-dot-files": "babel ./src/copy-files/files/.* --out-dir ./dist/copy-files/files --copy-files --extensions ''",
-    "clean:dist": "rimraf ./dist/index.js",
+    "clean:dist": "rimraf ./dist/index.js ./dist/copy-files/files/config.yml ./dist/copy-files/files/launch.json",
     "clean": "rimraf dist .rpt2_cache package-lock.json",
     "validate": "npm run lint && npm run build",
     "lint": "eslint src --ext .ts ",
